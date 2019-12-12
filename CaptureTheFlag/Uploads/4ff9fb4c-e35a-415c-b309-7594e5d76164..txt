@@ -1,0 +1,37 @@
+  request.RequestFormat = DataFormat.Json;
+
+                    IRestResponse respose = client.Execute(request);
+
+                    var value = respose.Content;
+
+ 
+
+                    var corcheabrir = value.IndexOf("{");
+
+                    string subjson = value.Substring(corcheabrir);
+
+                    JObject joResponse = JObject.Parse(subjson);
+
+                    switch (respose.StatusCode)
+
+                    {
+
+                        case HttpStatusCode.OK:
+
+                            IdRadicado = joResponse["radicado"].ToString();
+
+                            break;
+
+                        case HttpStatusCode.Unauthorized:
+
+                            IdRadicado = joResponse["message"].ToString();
+
+                            break;
+
+                        case HttpStatusCode.BadRequest:
+
+                            IdRadicado = joResponse["message"].ToString();
+
+                            break;
+
+                    } 

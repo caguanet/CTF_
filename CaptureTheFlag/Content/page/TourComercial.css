@@ -1,0 +1,86 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+/* ---- grid ---- */
+
+.grid {
+    background: #EEE;
+    /* center */
+    /*margin: 0 auto;*/
+}
+
+    /* clearfix */
+    .grid:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+/* ---- grid-item ---- */
+.relacionista {
+    font-size: 110% !important;
+}
+
+.grid-item {
+    float: left;
+    display:inline;
+    border: 2px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+.grid-item-content {
+    width: 100% !important;
+}
+/* ---- table ---- */
+
+td {
+    font-size: 90% !important;
+    text-align: center;
+}
+
+.grid-sizer {
+    width: 100%;
+    float:left;
+}
+/* ---- responsive ---- */
+/*@media screen and (max-width: 350px ) {
+    .grid-sizer {
+        width: 100%;
+    }
+}*/
+
+@media (min-width: 375px) {
+    .grid-sizer {
+        width: 50%;
+    }
+}
+
+@media (min-width: 520px) {
+    .grid-sizer {
+        width: 33.33333333333333%;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-sizer {
+        width: 33.33333333333333%;
+    }
+}
+@media (min-width: 970px) {
+    .grid-sizer {
+        width: 20%;
+    }
+}
+@media (min-width: 1440px) {
+    .grid-sizer {
+        width: 14.28571428571429%;
+    }
+}
+@media (min-width: 2560px) {
+    .grid-sizer {
+        width: 180px;
+    }
+}

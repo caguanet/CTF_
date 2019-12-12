@@ -1,0 +1,64 @@
+﻿/*clases utilizadas para dar dormato a los font icon de las grillas */
+.colorgriskendo {
+    color: #787878 !important;
+}
+
+.hover_icon:hover {
+    font-size: 140% !important;
+    color: #ffffff !important;
+}
+
+a.asindecoracion,
+a.asindecoracion:focus,
+a.asindecoracion:link,
+a.asindecoracion:visited,
+a.asindecoracion:hover,
+a.asindecoracion:active {
+    text-decoration: none !important;
+    color: #000000;
+}
+
+/*utilizada para dar formato template del autocompletar kendo*/
+/*utilizada para dar formato template del autocompletar kendo*/
+.ciudad-id {
+    display: inline-block;
+    min-width: 60px;
+    font-size: 11px;
+    margin-top: -2px;
+}
+
+.nombre {
+    margin-bottom: -12px;
+}
+
+/*** EDITAR ESTILO SE SWEET ALERT 2 ***/
+.swal2-container {
+    z-index: 9999;
+}
+/*** EDITAR ESTILO datepicker ***/
+.dropdown-menu {
+    z-index: 2000 !important;
+}
+
+.modal .dropdown-menu {
+    z-index: 3410 !important;
+}
+
+.select2-container {
+    z-index: 2000;
+}
+
+.popover .clockpicker-popover {
+    z-index: 2000;
+}
+
+/* 
+    jql validate chosen
+
+*/
+.has-error > .chosen-default.chosen-single,
+.has-error > .chosen-default.chosen-container-multi {
+    background: rgb(251, 227, 228) !important;
+    border: 1px solid #a94442 !important;
+    color: #8a1f11 !important;
+}
